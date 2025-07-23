@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "pnpm gen:runtime && pnpm gen:manifest && next dev -H 0.0.0.0",
-    "build": "pnpm gen:runtime && pnpm gen:manifest && next build",
-    "start": "next start",
+    "dev": "node init && pnpm gen:runtime && pnpm gen:manifest && next dev -H 0.0.0.0",
+    "build": "node init && pnpm gen:runtime && pnpm gen:manifest && next build",
+    "start": "node init && next start",
     "lint": "next lint",
     "lint:fix": "eslint src --fix && pnpm format",
     "lint:strict": "eslint --max-warnings=0 src",
